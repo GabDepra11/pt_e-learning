@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EducaTech | Frames & Iframes Guide</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; line-height: 1.6;">
+
+    <div style="max-width: 950px; margin: auto; background: white; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        
+        <header style="background-color: #2c3e50; color: white; padding: 25px; text-align: center;">
+            <h1 style="margin: 0; text-transform: uppercase; letter-spacing: 2px;">Understanding HTML Frames</h1>
+            <p style="margin: 5px 0 0; font-weight: 300;">Partitioning Web Windows & Embedding Documents</p>
+        </header>
+
+        <section style="padding: 30px; border-bottom: 2px solid #eee;">
+            <h2 style="color: #2980b9; border-bottom: 2px solid #2980b9; display: inline-block;">1. Legacy Framesets</h2>
+            <p><strong>Frames:</strong> A partition in a window that allows you to display multiple web pages. You can create frames by using the <code>&lt;frameset&gt;</code> tag.</p>
+            
+            <div style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #2980b9; margin: 20px 0;">
+                <p style="margin: 0;"><strong>Frameset Elements:</strong> Divides the browser window into separate frames using <code>cols</code> and <code>rows</code> attributes. These take percentage values separated by commas.</p>
+                <ul style="margin-top: 10px;">
+                    <li><strong>Cols:</strong> Indicates the number and width of columns.</li>
+                    <li><strong>Rows:</strong> Indicates the number, height, and rows.</li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <section style="padding: 30px;">
+            <h2 style="color: #8e44ad; border-bottom: 2px solid #8e44ad; display: inline-block;">2. Frame & Iframe Attributes</h2>
+            <p>Both standard frames and inline frames use these specific attributes to control behavior and appearance:</p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 14px;">
+                <thead>
+                    <tr style="background-color: #8e44ad; color: white;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Attribute</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>frameborder</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Turns the frame border on and off (0 or 1).</td>
+                    </tr>
+                    <tr style="background-color: #f2f2f2;">
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>noresize</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Locks the border to prohibit user resizing.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>name</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Defines the name used as a target for links.</td>
+                    </tr>
+                    <tr style="background-color: #f2f2f2;">
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>src</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Indicates the web page or file to be displayed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="padding: 30px; background-color: #edf2f7;">
+            <h2 style="color: #27ae60; border-bottom: 2px solid #27ae60; display: inline-block;">3. Inline Frames &lt;iframe&gt;</h2>
+            <p>Unlike standard frames, <strong>Inline Frames</strong> are embedded directly within the <code>&lt;body&gt;</code> of a webpage.</p>
+            
+            <div style="display: flex; gap: 20px; margin-top: 20px; align-items: center;">
+                <div style="flex: 1;">
+                    <ul style="padding-left: 20px;">
+                        <li>Used to embed another document within the current HTML document.</li>
+                        <li>They do not require a separate frameset file.</li>
+                        <li>Essential for embedding maps, videos, or external widgets.</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; text-align: center;">
+                    <p style="font-size: 12px; margin-bottom: 5px; color: #666;">Example Iframe (200x150):</p>
+                    <iframe src="about:blank" name="exampleFrame" style="width: 100%; height: 150px; border: 2px dashed #27ae60; background: white;">
+                        Your browser does not support iframes.
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <footer style="padding: 20px; text-align: center; font-size: 12px; color: #7f8c8d; background: #f9f9f9;">
+            EducaTech Web Dev Hub | Mastery of Frames & Layouts &copy; 2026
+        </footer>
+    </div>
+
+</body>
+</html>
