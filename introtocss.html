@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EducaTech | Introduction to CSS</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px;">
+
+    <div style="max-width: 900px; margin: auto; background: white; padding: 40px; border: 1px solid #dcdde1; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+        
+        <header style="text-align: center; border-bottom: 3px solid #3498db; margin-bottom: 30px; padding-bottom: 20px;">
+            <h1 style="color: #2c3e50; margin: 0;">Introduction to CSS</h1>
+            <p style="color: #7f8c8d; font-style: italic;">Formatting the Layout of the Web</p>
+        </header>
+
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #2980b9;">What is CSS?</h2>
+            <p style="line-height: 1.6;">
+                <strong>CSS (Cascading Style Sheets)</strong> is a language used for specifying the style of documents presented to users. It is primarily used to format the layout of Web pages.
+            </p>
+            <div style="display: flex; gap: 20px; margin-top: 15px;">
+                <div style="flex: 1; background: #ebf5fb; padding: 15px; border-radius: 8px;">
+                    <strong style="color: #2980b9;">Stylesheet:</strong> Refers to the document itself.
+                </div>
+                <div style="flex: 1; background: #ebf5fb; padding: 15px; border-radius: 8px;">
+                    <strong style="color: #2980b9;">Cascade:</strong> A web style sheet is made to work together with other sheets to control the final look.
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #2980b9;">CSS Syntax & Structure</h2>
+            <p>To style an element, you must follow a specific syntax:</p>
+            
+            
+            
+            <div style="background: #2c3e50; color: #ecf0f1; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; line-height: 1.5;">
+                <span style="color: #f1c40f;">h1</span> { <br>
+                &nbsp;&nbsp;<span style="color: #3498db;">color</span>: <span style="color: #2ecc71;">blue</span>; <span style="color: #95a5a6;">/* Property and Value separated by a colon */</span><br>
+                &nbsp;&nbsp;<span style="color: #3498db;">font-size</span>: <span style="color: #2ecc71;">12px</span>; <span style="color: #95a5a6;">/* Declaration ending with a semi-colon */</span><br>
+                }
+            </div>
+
+            <ul style="margin-top: 15px; line-height: 1.8;">
+                <li><strong>Selector:</strong> Points to the HTML element you want to style.</li>
+                <li><strong>Curly Braces { }:</strong> Surrounds the declaration block.</li>
+                <li><strong>Colon (:):</strong> Separates the property name from the value.</li>
+                <li><strong>Semi-colon (;):</strong> Signifies the end of a declaration block.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #2980b9;">Three Ways to Apply CSS</h2>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background-color: #2980b9; color: white;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Type</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Location</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Best For...</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>Inline CSS</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Inside the HTML element attribute.</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Styling a single specific element.</td>
+                    </tr>
+                    <tr style="background-color: #f9f9f9;">
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>Internal / Embedded</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Inside the <code>&lt;style&gt;</code> tag in the head.</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Unique style for a single HTML page.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>External CSS</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Separate <code>.css</code> file linked via <code>&lt;link&gt;</code>.</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Styling many web pages at once.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer style="text-align: center; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #95a5a6;">
+            EducaTech Learning Hub | CSS Module 1
+        </footer>
+    </div>
+
+</body>
+</html>
