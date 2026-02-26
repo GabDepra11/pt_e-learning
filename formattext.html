@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styling Mastery Guide</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px;">
+
+    <div style="max-width: 1000px; margin: auto; background: white; padding: 30px; border: 2px solid #2c3e50; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        
+        <header style="text-align: center; border-bottom: 4px double #3498db; margin-bottom: 40px; padding-bottom: 20px;">
+            <h1 style="color: #2c3e50; font-size: 36px; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Styling Text & Layout in CSS</h1>
+            <p style="font-style: italic; color: #7f8c8d;">A Comprehensive Learning Module for Web Developers</p>
+        </header>
+
+        <section style="margin-bottom: 50px;">
+            <h2 style="background-color: #3498db; color: white; padding: 10px 20px; border-radius: 5px;">A. Font Properties (The Character Shape)</h2>
+            <p style="line-height: 1.8; text-indent: 40px;">
+                Styling text in CSS refers to how text is arranged inside its container. Text behaves like a series of inline elements, flowing naturally until it hits the edge of the <span style="font-weight: bold; color: #e74c3c;">content box</span>.
+            </p>
+
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+                <tr style="background-color: #2c3e50; color: white;">
+                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Property</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Definition</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Values</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">color</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Specifies text color</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Red, #ff0000, rgb(255,0,0)</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">font-family</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Indicates the typeface</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Arial, "Times New Roman", sans-serif</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">font-size</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Indicates the size</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">px, em, %, small, large</td>
+                </tr>
+            </table>
+        </section>
+
+        <section style="margin-bottom: 50px;">
+            <h2 style="background-color: #27ae60; color: white; padding: 10px 20px; border-radius: 5px;">B. Text Layout Styles</h2>
+            
+            <div style="padding: 20px; border: 1px solid #27ae60; border-left: 10px solid #27ae60; background-color: #f1fef6; margin-top: 15px;">
+                <p style="text-align: justify; word-spacing: 2px; line-height: 1.6;">
+                    <span style="font-variant: small-caps; font-weight: bold; font-size: 1.2em;">Note on Text-Align:</span> 
+                    The <code>text-align</code> property can be set to <strong>left</strong>, <strong>center</strong>, <strong>right</strong>, or <strong>justify</strong>. Justify stretches text so each line has equal width, common in formal publications.
+                </p>
+                <p style="text-decoration: underline; letter-spacing: 1px;">This text uses letter-spacing and decoration.</p>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 50px;">
+            <h2 style="background-color: #8e44ad; color: white; padding: 10px 20px; border-radius: 5px;">C. The Box Model: Borders & Spacing</h2>
+            
+            
+
+            <div style="display: flex; gap: 20px; margin-top: 20px;">
+                <div style="flex: 1; border: 5px groove #8e44ad; padding: 15px; text-align: center;">
+                    <strong>Groove Border</strong><br>
+                    border-style: groove;
+                </div>
+                <div style="flex: 1; border: 2px solid #333; border-radius: 20px; padding: 15px; text-align: center;">
+                    <strong>Rounded Border</strong><br>
+                    border-radius: 20px;
+                </div>
+            </div>
+
+            <p style="margin-top: 20px; background: #eee; padding: 15px; border-left: 5px solid #333;">
+                <strong>Margin vs. Padding:</strong> 
+                <span style="color: #2980b9;">Padding</span> is the space inside the element (between content and border). 
+                <span style="color: #c0392b;">Margin</span> is the space outside the element (between neighbors).
+            </p>
+        </section>
+
+        <section>
+            <h2 style="background-color: #f39c12; color: white; padding: 10px 20px; border-radius: 5px;">D. Lists & Dynamic States</h2>
+            
+            <ul style="list-style-type: square; line-height: 2;">
+                <li><strong>List-style-type:</strong> disc, circle, square, or roman numerals.</li>
+                <li><strong>Pseudo-classes:</strong> Styles based on conditions (e.g., <code>:hover</code>).</li>
+                <li><strong>Pseudo-elements:</strong> Styles specific parts (e.g., <code>::first-letter</code> for drop caps).</li>
+            </ul>
+
+            <p style="border: 1px dashed #f39c12; padding: 15px;">
+                <span style="float: left; font-size: 50px; line-height: 40px; padding-top: 4px; padding-right: 8px; color: #f39c12; font-weight: bold;">D</span> 
+                rop caps can be created using the <code>::first-letter</code> pseudo-element. This creates a visually appealing start to a paragraph, often used in magazine layouts.
+            </p>
+        </section>
+
+        <footer style="margin-top: 50px; text-align: center; font-size: 12px; color: #95a5a6; border-top: 1px solid #ddd; padding-top: 20px;">
+            <p>EducaTech Learning Hub | Grade 10 Web Development</p>
+            <p>&copy; 2026 Interactive E-Learning Module</p>
+        </footer>
+    </div>
+
+</body>
+</html>
