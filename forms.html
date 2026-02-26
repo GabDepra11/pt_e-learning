@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EducaTech | Webform Mastery</title>
+</head>
+<body style="font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px;">
+
+    <div style="max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); border-top: 8px solid #3498db;">
+        
+        <header style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #2c3e50; margin: 0; text-transform: uppercase;">Webform Fundamentals</h1>
+            <p style="font-style: italic; color: #7f8c8d;">Collecting User Information with HTML & CSS</p>
+        </header>
+
+        <section style="margin-bottom: 40px; padding: 20px; background-color: #e8f4fd; border-radius: 8px;">
+            <h2 style="color: #2980b9; margin-top: 0;">What is a Webform?</h2>
+            <p style="line-height: 1.6;">
+                A <strong>form</strong> is a window or screen that contains numerous fields, or spaces to enter data. It acts as a container for different types of input elements such as text fields, checkboxes, and buttons.
+            </p>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Core Form Attributes</h3>
+            <div style="display: flex; gap: 15px; margin-top: 15px;">
+                <div style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                    <strong>Action:</strong> What happens when submitted.
+                </div>
+                <div style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                    <strong>Target:</strong> Where the result will open.
+                </div>
+                <div style="flex: 1; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                    <strong>Method:</strong> How data is sent (<em>Get</em> or <em>Post</em>).
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h3 style="color: #2c3e50;">Attributes of the &lt;input&gt; Tag</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <tr style="background-color: #2c3e50; color: white;">
+                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Attribute Name</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Values</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">name</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Any text (without spaces)</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">type</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Text, password, radio, checkbox, etc.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">size</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Any number (width of input)</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">checked</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">No value (pre-selects radio/checkbox)</td>
+                </tr>
+            </table>
+        </section>
+
+        
+
+        <section style="background-color: #fdfefe; border: 2px solid #3498db; padding: 30px; border-radius: 10px;">
+            <h2 style="text-align: center; color: #3498db;">Live Form Demonstration</h2>
+            <form style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <div>
+                    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Username (type="text"):</label>
+                    <input type="text" name="user" size="30" style="padding: 8px; width: 100%; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div>
+                    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Password (type="password"):</label>
+                    <input type="password" name="pass" style="padding: 8px; width: 100%; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div>
+                    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Select Choice (Dropdown):</label>
+                    <select name="choices" style="padding: 8px; width: 100%; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="1">Option One</option>
+                        <option value="2">Option Two</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 20px; padding: 10px; background: #f9f9f9;">
+                    <div>
+                        <input type="radio" name="gender" value="male" checked> Male (Radio)
+                    </div>
+                    <div>
+                        <input type="checkbox" name="agree" value="yes"> I Agree (Checkbox)
+                    </div>
+                </div>
+
+                <div>
+                    <label style="display: block; font-weight: bold; margin-bottom: 5px;">Feedback (Text Wrap Style: Soft):</label>
+                    <textarea name="feedback" wrap="soft" style="width: 100%; height: 80px; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+
+                <button type="submit" style="background-color: #3498db; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-weight: bold;">Submit Progression</button>
+            </form>
+        </section>
+
+        <footer style="margin-top: 40px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+            <p style="font-size: 0.9em; color: #95a5a6;">EducaTech Web Dev | Grade 10 Performance Task</p>
+        </footer>
+    </div>
+
+</body>
+</html>
